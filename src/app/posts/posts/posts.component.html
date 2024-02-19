@@ -1,0 +1,6 @@
+<h1>Posts</h1>
+<p><b>Result:</b> {{ (result$ | async)?.body }}</p>
+<p *ngIf="comments$ | async as comment">
+  <b>Comment:</b> {{ comment[0].name }}
+</p>
+<p *ngFor="let post of posts$ | async"><b>Post body:</b> {{ post.body }}</p>

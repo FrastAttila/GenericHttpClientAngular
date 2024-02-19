@@ -1,0 +1,4 @@
+<button (click)="switchview()">Switch view</button>
+
+<app-posts *ngIf="showPosts"></app-posts>
+<app-albums *ngIf="!showPosts"></app-albums>
